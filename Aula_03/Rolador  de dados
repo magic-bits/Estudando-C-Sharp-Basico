@@ -1,0 +1,13 @@
+using System;
+					
+public int Rolar (int faces, int modificador){
+	Random num = new Random();
+	return num.Next(1, faces)+modificador;
+}
+
+Console.WriteLine ("Digite o Número de Faces do dado");
+int f = Convert.ToInt32 (Console.ReadLine());
+Console.WriteLine ("Digite o Modificador");
+int m = Convert.ToInt32 (Console.ReadLine());
+int s = Rolar (f, m);
+Console.WriteLine ("Resultado: d"+f+" + "+m+" = "+s);
